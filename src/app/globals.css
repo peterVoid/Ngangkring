@@ -1,0 +1,1043 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #dddddd;
+}
+
+.neo-brutalist-hard {
+  border: 3px solid #000;
+  box-shadow: 6px 6px 0px 0px #000;
+  border-radius: 0 !important; /* Brutalism hates curves */
+  transition: all 0.1s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+
+.neo-brutalist-hard:hover {
+  box-shadow: 3px 3px 0px 0px #000;
+}
+
+.neo-brutalist-hard:active {
+  box-shadow: 1px 1px 0px 0px #000;
+}
+
+.neo-brutalist-cart {
+  border: 4px solid #000;
+  box-shadow: 8px 8px 0px 0px #000;
+}
+
+.neo-brutalist-input {
+  border: 3px solid #000;
+  box-shadow: 4px 4px 0px 0px #000;
+  transition: all 0.1s ease;
+}
+
+.neo-brutalist-input:focus {
+  outline: none;
+  box-shadow: 2px 2px 0px 0px #000;
+  transform: translate(2px, 2px);
+}
+
+.neo-brutalist-item {
+  transition: all 0.1s ease;
+}
+
+.neo-brutalist-item:hover {
+  transform: translateX(2px);
+}
+
+.neo-brutalist-btn {
+  border: 2px solid #000 !important;
+  box-shadow: 3px 3px 0px 0px #000 !important;
+  transition: all 0.1s ease;
+}
+
+.neo-brutalist-btn:hover {
+  box-shadow: 2px 2px 0px 0px #000 !important;
+  transform: translate(1px, 1px);
+}
+
+.neo-brutalist-btn:active {
+  box-shadow: 0px 0px 0px 0px #000 !important;
+  transform: translate(3px, 3px);
+}
+
+.neo-brutalist-btn-destructive {
+  border: 2px solid #000 !important;
+  box-shadow: 3px 3px 0px 0px #000 !important;
+  background-color: #ff4d4d !important;
+  color: white !important;
+}
+
+.neo-brutalist-btn-outline {
+  border: 2px solid #000 !important;
+  box-shadow: 3px 3px 0px 0px #000 !important;
+  background-color: white !important;
+}
+
+.neo-brutalist-btn-primary {
+  border: 2px solid #000 !important;
+  box-shadow: 4px 4px 0px 0px #000 !important;
+  background-color: #000 !important;
+  color: white !important;
+}
+
+.neo-brutalist-btn-primary:hover {
+  background-color: #333 !important;
+  box-shadow: 3px 3px 0px 0px #000 !important;
+}
+
+.neo-brutalist-btn-primary:disabled {
+  background-color: #999 !important;
+  box-shadow: 3px 3px 0px 0px #666 !important;
+  border-color: #666 !important;
+}
+
+.neo-brutalist-card {
+  border: 4px solid #000 !important;
+  box-shadow: 8px 8px 0px 0px #000 !important;
+  border-radius: 0 !important;
+  background-color: white !important;
+}
+
+.neo-brutalist-loading {
+  border: 4px solid #000 !important;
+  box-shadow: 8px 8px 0px 0px #000 !important;
+  border-radius: 0 !important;
+}
+
+.neo-brutalist-card:hover {
+  box-shadow: 6px 6px 0px 0px #000 !important;
+}
+
+.neo-brutalist-table-container {
+  box-shadow: 8px 8px 0px 0px #000;
+  background-color: white;
+}
+
+.neo-brutalist-btn-edit {
+  background-color: white !important;
+  box-shadow: 3px 3px 0px 0px #000 !important;
+  transition: all 0.1s ease;
+}
+
+.neo-brutalist-btn-edit:hover {
+  background-color: black !important;
+  color: white !important;
+  box-shadow: 2px 2px 0px 0px #000 !important;
+  transform: translate(1px, 1px);
+}
+
+.neo-brutalist-btn-delete {
+  background-color: white !important;
+  box-shadow: 3px 3px 0px 0px #000 !important;
+  color: #ff4d4d !important;
+  transition: all 0.1s ease;
+}
+
+.neo-brutalist-btn-delete:hover {
+  background-color: #ff4d4d !important;
+  color: white !important;
+  box-shadow: 2px 2px 0px 0px #000 !important;
+  transform: translate(1px, 1px);
+}
+
+.neo-brutalist-form-container {
+  border: 4px solid #000;
+  box-shadow: 8px 8px 0px 0px #000;
+  background-color: white;
+}
+
+.neo-brutalist-input {
+  border: 3px solid #000 !important;
+  box-shadow: 3px 3px 0px 0px #000 !important;
+  padding: 0.75rem 1rem !important;
+  font-weight: bold !important;
+  border-radius: 0 !important;
+}
+
+.neo-brutalist-input:focus {
+  box-shadow: 2px 2px 0px 0px #000 !important;
+  transform: translate(1px, 1px);
+}
+
+.neo-brutalist-select {
+  border: 3px solid #000 !important;
+  box-shadow: 3px 3px 0px 0px #000 !important;
+  padding: 0.75rem 1rem !important;
+  font-weight: bold !important;
+  border-radius: 0 !important;
+}
+
+.neo-brutalist-dropdown {
+  border: 3px solid #000 !important;
+  box-shadow: 3px 3px 0px 0px #000 !important;
+  border-radius: 0 !important;
+}
+
+.neo-brutalist-select-item {
+  font-weight: bold !important;
+  padding: 0.5rem 1rem !important;
+}
+
+.neo-brutalist-select-item:hover {
+  background-color: black !important;
+  color: white !important;
+}
+
+.neo-brutalist-upload-container {
+  border: 3px dashed #000 !important;
+  background-color: white !important;
+}
+
+.neo-brutalist-image-preview {
+  box-shadow: 4px 4px 0px 0px #000;
+}
+
+.neo-brutalist-submit-btn {
+  border: 3px solid #000 !important;
+  box-shadow: 4px 4px 0px 0px #000 !important;
+  background-color: black !important;
+  color: white !important;
+  font-weight: bold !important;
+  padding: 0.75rem 2rem !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.05em !important;
+  border-radius: 0 !important;
+  transition: all 0.1s ease !important;
+}
+
+.neo-brutalist-submit-btn:hover {
+  box-shadow: 3px 3px 0px 0px #000 !important;
+  transform: translate(1px, 1px);
+  background-color: #333 !important;
+}
+
+.neo-brutalist-submit-btn:active {
+  box-shadow: 1px 1px 0px 0px #000 !important;
+  transform: translate(3px, 3px);
+}
+
+.neo-brutalist-submit-btn:disabled {
+  background-color: #999 !important;
+  box-shadow: 3px 3px 0px 0px #666 !important;
+  border-color: #666 !important;
+}
+
+.neo-brutalist-form-container {
+  border: 4px solid #000;
+  box-shadow: 8px 8px 0px 0px #000;
+  background-color: white;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.neo-brutalist-input {
+  border: 3px solid #000 !important;
+  box-shadow: 3px 3px 0px 0px #000 !important;
+  padding: 1rem !important;
+  font-weight: bold !important;
+  border-radius: 0 !important;
+  font-size: 1rem;
+}
+
+.neo-brutalist-input:focus {
+  box-shadow: 2px 2px 0px 0px #000 !important;
+  transform: translate(1px, 1px);
+  outline: none;
+}
+
+.neo-brutalist-submit-btn {
+  border: 3px solid #000 !important;
+  box-shadow: 4px 4px 0px 0px #000 !important;
+  background-color: black !important;
+  color: white !important;
+  font-weight: bold !important;
+  padding: 0.75rem 2rem !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.05em !important;
+  border-radius: 0 !important;
+  transition: all 0.1s ease !important;
+}
+
+.neo-brutalist-submit-btn:hover {
+  box-shadow: 3px 3px 0px 0px #000 !important;
+  transform: translate(1px, 1px);
+  background-color: #333 !important;
+}
+
+.neo-brutalist-submit-btn:active {
+  box-shadow: 1px 1px 0px 0px #000 !important;
+  transform: translate(3px, 3px);
+}
+
+.neo-brutalist-submit-btn:disabled {
+  background-color: #999 !important;
+  box-shadow: 3px 3px 0px 0px #666 !important;
+  border-color: #666 !important;
+}
+
+.neo-brutalist-cancel-btn {
+  border: 3px solid #000 !important;
+  box-shadow: 4px 4px 0px 0px #000 !important;
+  background-color: white !important;
+  color: black !important;
+  font-weight: bold !important;
+  padding: 0.75rem 2rem !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.05em !important;
+  border-radius: 0 !important;
+  transition: all 0.1s ease !important;
+}
+
+.neo-brutalist-cancel-btn:hover {
+  box-shadow: 3px 3px 0px 0px #000 !important;
+  transform: translate(1px, 1px);
+  background-color: #f0f0f0 !important;
+}
+
+/* Page Container */
+.neo-brutalist-page-container {
+  background-color: white;
+  padding: 2rem;
+}
+
+/* Table Container */
+.neo-brutalist-table-container {
+  border: 4px solid #000;
+  box-shadow: 8px 8px 0px 0px #000;
+  margin-bottom: 2rem;
+}
+
+/* Filter Container */
+.neo-brutalist-filter-container > * {
+  border: 3px solid #000 !important;
+  box-shadow: 4px 4px 0px 0px #000 !important;
+}
+
+/* Loading State */
+.neo-brutalist-loading {
+  border: 4px solid #000;
+  box-shadow: 8px 8px 0px 0px #000;
+}
+
+.neo-brutalist-error {
+  box-shadow: 8px 8px 0px 0px #000;
+}
+
+.neo-brutalist-delete-btn {
+  border: 2px solid #000 !important;
+  box-shadow: 3px 3px 0px 0px #000 !important;
+  background-color: #ff4d4d !important;
+  color: white !important;
+}
+
+.neo-brutalist-delete-btn:hover {
+  box-shadow: 2px 2px 0px 0px #000 !important;
+  transform: translate(1px, 1px);
+}
+
+.neo-brutalist-dialog {
+  border: 4px solid #000 !important;
+  box-shadow: 8px 8px 0px 0px #000 !important;
+}
+
+.neo-brutalist-cancel-btn {
+  border: 2px solid #000 !important;
+  box-shadow: 3px 3px 0px 0px #000 !important;
+  background-color: white !important;
+  color: black !important;
+  font-weight: bold !important;
+}
+
+.neo-brutalist-confirm-btn {
+  border: 2px solid #000 !important;
+  box-shadow: 3px 3px 0px 0px #000 !important;
+  background-color: black !important;
+  color: white !important;
+  font-weight: bold !important;
+}
+
+.neo-brutalist-confirm-btn:hover {
+  background-color: #ff4d4d !important;
+}
+
+/* Select Trigger */
+.neo-brutalist-select-trigger {
+  border: 3px solid #000 !important;
+  box-shadow: 4px 4px 0px 0px #000 !important;
+  padding: 0.75rem 1rem !important;
+  font-weight: bold !important;
+  border-radius: 0 !important;
+  background-color: white !important;
+  min-width: 200px !important;
+}
+
+.neo-brutalist-select-trigger:hover {
+  box-shadow: 3px 3px 0px 0px #000 !important;
+  transform: translate(1px, 1px);
+}
+
+.neo-brutalist-select-trigger:focus {
+  box-shadow: 2px 2px 0px 0px #000 !important;
+}
+
+/* Select Content */
+.neo-brutalist-select-content {
+  border: 3px solid #000 !important;
+  box-shadow: 4px 4px 0px 0px #000 !important;
+  border-radius: 0 !important;
+  background-color: white !important;
+}
+
+/* Select Label */
+.neo-brutalist-select-label {
+  font-weight: bold !important;
+  color: black !important;
+  padding: 0.5rem 1rem !important;
+  text-transform: uppercase !important;
+  font-size: 0.8rem !important;
+  letter-spacing: 0.05em !important;
+}
+
+/* Select Item */
+.neo-brutalist-select-item {
+  font-weight: bold !important;
+  padding: 0.75rem 1rem !important;
+  border-bottom: 1px solid #000 !important;
+  text-transform: uppercase !important;
+}
+
+.neo-brutalist-select-item:last-child {
+  border-bottom: none !important;
+}
+
+.neo-brutalist-select-item:hover {
+  background-color: black !important;
+  color: white !important;
+}
+
+.neo-brutalist-select-item[data-state="checked"] {
+  background-color: black !important;
+  color: white !important;
+}
+
+/* Date Filter Container */
+.neo-brutalist-date-filter {
+  border: 3px solid #000;
+  box-shadow: 4px 4px 0px 0px #000;
+  padding: 0.75rem;
+  background-color: white;
+}
+
+/* Date Inputs */
+.neo-brutalist-date-input {
+  border: 2px solid #000 !important;
+  box-shadow: 3px 3px 0px 0px #000 !important;
+  padding: 0.5rem 1rem !important;
+  font-weight: bold !important;
+  border-radius: 0 !important;
+  min-width: 150px;
+}
+
+.neo-brutalist-date-input:focus {
+  box-shadow: 2px 2px 0px 0px #000 !important;
+  transform: translate(1px, 1px);
+  outline: none;
+}
+
+/* Filter Button */
+.neo-brutalist-filter-btn {
+  border: 2px solid #000 !important;
+  box-shadow: 3px 3px 0px 0px #000 !important;
+  background-color: black !important;
+  color: white !important;
+  font-weight: bold !important;
+  padding: 0.5rem 1.5rem !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.05em !important;
+  border-radius: 0 !important;
+  transition: all 0.1s ease !important;
+}
+
+.neo-brutalist-filter-btn:hover {
+  box-shadow: 2px 2px 0px 0px #000 !important;
+  transform: translate(1px, 1px);
+  background-color: #333 !important;
+}
+
+/* Disabled Button */
+.neo-brutalist-disabled-btn {
+  background-color: #999 !important;
+  box-shadow: 3px 3px 0px 0px #666 !important;
+  border-color: #666 !important;
+  cursor: not-allowed !important;
+}
+
+/* Reset Button */
+.neo-brutalist-reset-btn {
+  border: 2px solid #000 !important;
+  box-shadow: 3px 3px 0px 0px #000 !important;
+  background-color: white !important;
+  color: black !important;
+  font-weight: bold !important;
+  padding: 0.5rem 1.5rem !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.05em !important;
+  border-radius: 0 !important;
+  transition: all 0.1s ease !important;
+}
+
+.neo-brutalist-reset-btn:hover {
+  box-shadow: 2px 2px 0px 0px #000 !important;
+  transform: translate(1px, 1px);
+  background-color: #f0f0f0 !important;
+}
+
+/* Order Details Container */
+.neo-brutalist-order-details {
+  border: 4px solid #000;
+  box-shadow: 8px 8px 0px 0px #000;
+  padding: 2rem;
+  background-color: white;
+  max-width: 800px;
+  margin: 2rem auto;
+}
+
+/* Order Header */
+.neo-brutalist-order-header {
+  border-bottom: 4px solid #000;
+  padding-bottom: 1rem;
+}
+
+/* Order Info */
+.neo-brutalist-order-info {
+  border-bottom: 4px solid #000;
+  padding: 1.5rem 0;
+}
+
+/* Order Items */
+.neo-brutalist-order-items {
+  padding: 1.5rem 0;
+}
+
+.neo-brutalist-order-item {
+  border: 3px solid #000;
+  box-shadow: 3px 3px 0px 0px #000;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  transition: all 0.2s ease;
+}
+
+.neo-brutalist-order-item:hover {
+  box-shadow: 2px 2px 0px 0px #000;
+  transform: translate(1px, 1px);
+}
+
+.neo-brutalist-item-image {
+  border: 2px solid #000;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Order Summary */
+.neo-brutalist-order-summary {
+  padding-top: 1.5rem;
+}
+
+/* Dashboard Container */
+.neo-brutalist-dashboard {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.neo-brutalist-dashboard-title {
+  font-size: 2.5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -0.05em;
+  margin-bottom: 2rem;
+  border-bottom: 4px solid black;
+  padding-bottom: 1rem;
+}
+
+/* Dashboard Grid */
+.neo-brutalist-dashboard-grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.neo-brutalist-dashboard-section {
+  border: 4px solid black;
+  box-shadow: 8px 8px 0px 0px black;
+  padding: 1.5rem;
+  background-color: white;
+}
+
+.neo-brutalist-section-title {
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  font-size: 1.25rem;
+  border-bottom: 2px solid black;
+  padding-bottom: 0.5rem;
+}
+
+/* Cards Grid */
+.neo-brutalist-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Dashboard Card */
+.neo-brutalist-card {
+  border: 3px solid black;
+  box-shadow: 6px 6px 0px 0px black;
+  padding: 1.5rem;
+  background-color: white;
+  transition: all 0.2s ease;
+}
+
+.neo-brutalist-card:hover {
+  box-shadow: 4px 4px 0px 0px black;
+  transform: translate(2px, 2px);
+}
+
+.neo-brutalist-card-title {
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.neo-brutalist-card-description {
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.neo-brutalist-card-content {
+  font-weight: 900;
+  font-size: 1.75rem;
+}
+
+/* Card Variants */
+.neo-brutalist-card-sales {
+  background-color: #f0fdf4;
+}
+
+.neo-brutalist-card-sales .neo-brutalist-card-content {
+  color: #16a34a;
+}
+
+.neo-brutalist-card-stock {
+  background-color: #eff6ff;
+}
+
+.neo-brutalist-card-stock .neo-brutalist-card-content {
+  color: #2563eb;
+}
+
+/* Page Container */
+.neo-brutalist-page-container {
+  border: 4px solid #000;
+  box-shadow: 8px 8px 0px 0px #000;
+  padding: 2rem;
+  background-color: white;
+  margin: 2rem auto;
+  max-width: 1200px;
+}
+
+/* Page Header */
+.neo-brutalist-page-header {
+  border-bottom: 4px solid #000;
+  padding-bottom: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.neo-brutalist-page-header h1 {
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -0.025em;
+  font-size: 2rem;
+}
+
+/* New Product Button */
+.neo-brutalist-new-product-btn {
+  border: 3px solid #000 !important;
+  box-shadow: 4px 4px 0px 0px #000 !important;
+  background-color: black !important;
+  color: white !important;
+  font-weight: bold !important;
+  padding: 0.5rem 1.25rem !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.05em !important;
+  border-radius: 0 !important;
+  transition: all 0.1s ease !important;
+}
+
+.neo-brutalist-new-product-btn:hover {
+  box-shadow: 3px 3px 0px 0px #000 !important;
+  transform: translate(1px, 1px);
+  background-color: #333 !important;
+}
+
+/* Filter Container */
+.neo-brutalist-filter-container {
+  border: 3px solid #000;
+  box-shadow: 4px 4px 0px 0px #000;
+  padding: 0.75rem;
+  background-color: white;
+  margin-bottom: 1.5rem;
+  width: fit-content;
+}
+
+/* Table Container */
+.neo-brutalist-table-container {
+  border: 4px solid #000;
+  box-shadow: 8px 8px 0px 0px #000;
+  margin-bottom: 2rem;
+  background-color: white;
+  overflow-x: auto;
+}
+
+/* Pagination Container */
+.neo-brutalist-pagination-container {
+  border: 3px solid #000;
+  box-shadow: 4px 4px 0px 0px #000;
+  padding: 1rem;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+
+/* Skeleton Loading */
+.neo-brutalist-card-skeleton {
+  border: 3px solid black;
+  box-shadow: 6px 6px 0px 0px black;
+  padding: 1.5rem;
+  background-color: white;
+}
+
+.neo-brutalist-placeholder {
+  padding: 2rem;
+  text-align: center;
+  font-weight: 800;
+  text-transform: uppercase;
+  background-color: #f5f5f5;
+  border: 2px dashed black;
+}
+
+/* Chart Container */
+.neo-brutalist-chart-container {
+  border: 3px solid #000;
+  box-shadow: 6px 6px 0px 0px #000;
+  padding: 1.5rem;
+  background-color: white;
+  transition: all 0.2s ease;
+}
+
+.neo-brutalist-chart-container:hover {
+  box-shadow: 4px 4px 0px 0px #000;
+  transform: translate(2px, 2px);
+}
+
+.neo-brutalist-chart-title {
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #000;
+  padding-bottom: 0.5rem;
+}
+
+.neo-brutalist-chart-wrapper {
+  width: 100%;
+  height: 300px;
+}
+
+/* Responsive Grid Layout */
+.neo-brutalist-dashboard-section .neo-brutalist-placeholder {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+/* Chart Container */
+.neo-brutalist-chart-container {
+  border: 4px solid #000;
+  box-shadow: 8px 8px 0px 0px #000;
+  padding: 1.5rem;
+  background-color: white;
+  transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.neo-brutalist-chart-container:hover {
+  box-shadow: 5px 5px 0px 0px #000;
+  transform: translate(3px, 3px);
+}
+
+.neo-brutalist-chart-title {
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.025em;
+  border-bottom: 3px solid #000;
+  padding-bottom: 0.75rem;
+}
+
+.neo-brutalist-chart-wrapper {
+  width: 100%;
+  height: 300px;
+  margin-top: 1rem;
+}
+
+/* Custom tooltip arrow */
+.recharts-tooltip-wrapper .recharts-tooltip::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-top-color: #000;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Range Selector Button */
+.neo-brutalist-range-btn {
+  border: 3px solid #000 !important;
+  box-shadow: 4px 4px 0px 0px #000 !important;
+  background-color: white !important;
+  color: black !important;
+  font-weight: bold !important;
+  padding: 0.5rem 1.5rem !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.05em !important;
+  border-radius: 0 !important;
+  transition: all 0.1s ease !important;
+}
+
+.neo-brutalist-range-btn:hover {
+  box-shadow: 3px 3px 0px 0px #000 !important;
+  transform: translate(1px, 1px);
+  background-color: #f0f0f0 !important;
+}
+
+/* Dropdown Menu */
+.neo-brutalist-dropdown-content {
+  border: 3px solid #000 !important;
+  box-shadow: 6px 6px 0px 0px #000 !important;
+  border-radius: 0 !important;
+  background-color: white !important;
+  padding: 0.5rem !important;
+}
+
+.neo-brutalist-dropdown-item {
+  font-weight: bold !important;
+  padding: 0.5rem 1rem !important;
+  border-bottom: 1px solid #000 !important;
+  cursor: pointer !important;
+}
+
+.neo-brutalist-dropdown-item:last-child {
+  border-bottom: none !important;
+}
+
+.neo-brutalist-dropdown-item:hover {
+  background-color: black !important;
+  color: white !important;
+}
+
+/* Enhanced Chart Elements */
+.neo-brutalist-chart-title {
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  letter-spacing: -0.025em;
+  margin: 0;
+}
+
+.recharts-line {
+  stroke-linecap: square;
+}
+
+.recharts-cartesian-axis-tick-value {
+  dominant-baseline: middle;
+}
+
+/* Calendar Styling */
+.neo-brutalist-dropdown-content .rdp {
+  --rdp-cell-size: 40px;
+  --rdp-accent-color: #000;
+  --rdp-background-color: #f0f0f0;
+  margin: 0;
+}
+
+.neo-brutalist-dropdown-content .rdp-day {
+  font-weight: bold;
+  border: 1px solid transparent;
+}
+
+.neo-brutalist-dropdown-content .rdp-day:hover {
+  background-color: black !important;
+  color: white !important;
+}
+
+.neo-brutalist-dropdown-content
+  .rdp-button:hover:not([disabled]):not(.rdp-day_selected) {
+  background-color: black;
+  color: white;
+}
+
+.neo-brutalist-dropdown-content .rdp-day_selected {
+  background-color: black;
+  color: white;
+}
+
+/* Submit Button */
+.neo-brutalist-submit-btn {
+  border: 3px solid #000 !important;
+  box-shadow: 4px 4px 0px 0px #000 !important;
+  background-color: black !important;
+  color: white !important;
+  font-weight: bold !important;
+  padding: 0.75rem !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.05em !important;
+  border-radius: 0 !important;
+  transition: all 0.1s ease !important;
+}
+
+.neo-brutalist-submit-btn:hover {
+  box-shadow: 3px 3px 0px 0px #000 !important;
+  transform: translate(1px, 1px);
+  background-color: #333 !important;
+}
+
+.neo-brutalist-submit-btn:disabled {
+  background-color: #999 !important;
+  box-shadow: 3px 3px 0px 0px #666 !important;
+  border-color: #666 !important;
+}
+
+/* Dropdown Separator */
+.neo-brutalist-dropdown-content .dropdown-menu-separator {
+  border-color: black !important;
+  border-width: 2px !important;
+}
+
+/* Vertical Bar Chart Specific Styling */
+.neo-brutalist-chart-container .recharts-bar-rectangle {
+  stroke-width: 2px;
+}
+
+/* Responsive YAxis Labels */
+.neo-brutalist-chart-container .recharts-yAxis .recharts-text {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 100px;
+}
+
+/* Bar Hover Effects */
+.neo-brutalist-chart-container .recharts-bar-rectangle:hover {
+  opacity: 0.8;
+  stroke-width: 3px;
+}
+
+/* Tooltip Arrow */
+.neo-brutalist-chart-container .recharts-tooltip-wrapper::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-right-color: #000;
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Vertical Layout Adjustments */
+.neo-brutalist-chart-wrapper {
+  height: 400px;
+  margin-top: 1rem;
+}
+
+/* Product Name Truncation */
+.neo-brutalist-chart-container .recharts-yAxis .recharts-text {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  max-width: 100px;
+}
+
+@media (min-width: 1024px) {
+  .neo-brutalist-dashboard-section .neo-brutalist-placeholder {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Status Colors */
+.bg-green-600 {
+  background-color: #16a34a !important;
+}
+
+.bg-yellow-600 {
+  background-color: #ca8a04 !important;
+}
+
+.bg-red-600 {
+  background-color: #dc2626 !important;
+}
+
+:root {
+  --main: #88aaee;
+  --overlay: rgba(
+    0,
+    0,
+    0,
+    0.8
+  ); /* background color overlay for alert dialogs, modals, etc. */
+
+  --bg: #dfe5f2;
+  --bw: #fff; /* white and secondary black e.g. utility class variant would be: bg-[#fff] dark:bg-[#212121] */
+  --blank: #000; /* blank black and white */
+  --border: #000;
+  --text: #000;
+  --mtext: #000; /* text that is placed on background with main color e.g. text color of default button */
+  --ring: #000;
+  --ring-offset: #fff;
+
+  --border-radius: 8px;
+  --box-shadow-x: 2px;
+  --box-shadow-y: 4px;
+  --reverse-box-shadow-x: -2px;
+  --reverse-box-shadow-y: -4px;
+  --base-font-weight: 500;
+  --heading-font-weight: 700;
+
+  --shadow: var(--box-shadow-x) var(--box-shadow-y) 0px 0px var(--border);
+}
+
+.dark {
+  --bg: #272933;
+  --bw: #212121;
+  --blank: #fff;
+  --border: #000;
+  --text: #e6e6e6;
+  --mtext: #000;
+  --ring: #fff;
+  --ring-offset: #000;
+
+  --shadow: var(--box-shadow-x) var(--box-shadow-y) 0px 0px var(--border);
+}
