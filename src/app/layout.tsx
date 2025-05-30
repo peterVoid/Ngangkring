@@ -33,18 +33,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <ClerkProvider afterSignOutUrl="/">
-      <CartProvider>
-        <html lang="en">
-          <body className={`${dmSans.className}`}>
-            <Suspense>
+    <Suspense>
+      <ClerkProvider afterSignOutUrl="/">
+        <CartProvider>
+          <html lang="en">
+            <body className={`${dmSans.className}`}>
               <UTSSR />
               {children}
-            </Suspense>
-            <Toaster />
-          </body>
-        </html>
-      </CartProvider>
-    </ClerkProvider>
+              <Toaster />
+            </body>
+          </html>
+        </CartProvider>
+      </ClerkProvider>
+    </Suspense>
   );
 }

@@ -1,44 +1,57 @@
 # 🥢 Angkringan – Aplikasi Pemesanan Warkop Digital
 
-Angkringan adalah aplikasi web **pemesanan makanan & minuman** untuk warung kopi (warkop) modern. Pengunjung cukup **scan QR code** untuk langsung mengakses menu, memesan, dan melacak status pesanan **tanpa harus login**.
+**Angkringan** adalah aplikasi pemesanan makanan & minuman untuk warkop modern. Pengunjung cukup **scan QR Code** untuk langsung melihat menu, memesan, dan melacak status pesanan **tanpa harus login**.
 
-✨ Dibuat dengan teknologi modern seperti **Next.js 15**, **Supabase Realtime**, **Drizzle ORM**, dan **Clerk** untuk kebutuhan admin.
+✨ Dibangun dengan **Next.js 15**, **Supabase Realtime**, **Drizzle ORM**, dan **Clerk** untuk manajemen admin.
 
-## 🛠 Tech Stack
+---
+
+## 🚀 Tech Stack
 
 - **Frontend:** Next.js 15, React 19, TailwindCSS, Shadcn UI, React Hook Form
-- **Backend:** Supabase Realtime, Drizzle ORM, Neon DB
-- **Auth:** Clerk (untuk admin)
-- **Others:** React Query, UploadThing, Recharts, Zod
+- **Backend:** Supabase Realtime, Drizzle ORM, Neon Database
+- **Auth:** Clerk
+- **Others:** React Query, UploadThing, Recharts, Zod, ShadCN, Lucide Icons
 
 ---
 
-## 📱 Alur Pengguna (Customer Flow)
+## 📲 Alur Pengguna (Tanpa Login)
 
-1. ✅ **Scan QR Code** → langsung masuk ke halaman menu.
-2. 📂 **Menu bisa difilter** berdasarkan kategori seperti _makanan_ atau _minuman_.
-3. 🛒 **Tambah ke keranjang** tanpa login.
-4. ✍️ **Masukkan nomor meja** di halaman keranjang.
-5. ➖➕ **Atur kuantitas**, **hapus item**, atau **clear keranjang**.
-6. 📦 **Klik “Pesan”**, lalu data akan masuk ke sistem backend.
-7. 📜 **Cek riwayat pesanan (order history)** untuk melacak status pesanan secara real-time.
+1. 🔍 **Scan QR Code** di meja warkop.
+2. 📋 **Lihat daftar menu** yang bisa difilter berdasarkan kategori (_makanan_, _minuman_, dll).
+3. 🛒 **Tambah produk ke keranjang** tanpa login.
+4. 🪑 **Masukkan nomor meja** di halaman cart.
+5. ➕➖ **Atur jumlah**, hapus item, atau clear keranjang.
+6. ✅ Klik **"Pesan"** untuk submit order.
+7. 🔁 **Lacak status pesanan** secara real-time di halaman **Order History**.
 
 ---
 
-## 🛠 Alur Admin
+## 🛠 Alur Admin (Dengan Login)
 
-1. 🔐 **Login menggunakan Clerk** untuk akses fitur admin.
-2. 🗂️ **Kelola kategori dan produk** – Tambah, ubah, atau hapus makanan/minuman.
-3. 📦 **Kelola pesanan pelanggan** – Pantau dan ubah status pesanan secara **real-time** dengan Supabase Realtime (misalnya: "pending", "diterima", "diproses").
-4. 🧑‍💼 **Kelola request admin baru** – Teman yang ingin jadi admin bisa mengakses halaman khusus dan memasukkan **password rahasia**.
-5. ✅ **Setujui permintaan admin** – Setelah request dikirim, admin utama bisa mempromosikannya dari halaman _Request Admin_.
+1. 🔐 **Login via Clerk** melalui halaman:
+2. 🧾 **Kelola kategori dan produk** (Tambah/Ubah/Hapus).
+3. 📦 **Kelola pesanan** pelanggan:
+
+- Ubah status pesanan seperti: `pending`, `diterima`, `diproses`, `selesai`.
+- Update status dilakukan secara **real-time** menggunakan **Supabase Realtime**.
+
+4. 🧑‍💼 **Kelola request admin baru**:
+
+- User yang ingin jadi admin bisa akses halaman:
+  ```
+  /request-admin
+  ```
+- Masukkan **password rahasia**, jika benar, akan disuruh login, permintaan akan muncul di dashboard admin.
+- Admin utama bisa **promote** user tersebut menjadi admin.
+
+---
 
 ## ✨ Fitur Unggulan
 
-- ✅ **Tanpa login untuk pelanggan**
-- 📱 **Responsif dan mobile-friendly**
-- 🧾 **Tracking pesanan per meja**
-- 📊 **Dashboard admin real-time**
-- 🔄 **Realtime order status updates**
-- ⚙️ **Role-based access untuk admin**
-- 🔐 **Proteksi akses admin via password**
+- ✅ **Tanpa login** untuk pelanggan
+- 🧾 **Tracking pesanan** berdasarkan nomor meja
+- ⚡ **Real-time order updates** untuk admin & user
+- 🛠 **Dashboard admin lengkap** (produk, kategori, pesanan, admin)
+- 🔐 **Proteksi halaman admin** via login dan request password
+- 📱 **Mobile responsive** dan user-friendly UI

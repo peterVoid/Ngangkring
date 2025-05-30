@@ -4,6 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "dev:webhooks": "ngrok http --url=choice-anchovy-deep.ngrok-free.app 3000",
+    "dev:all": "concurrently \"bun dev\" \"bun run dev:webhooks\"",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
